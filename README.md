@@ -1,2 +1,2 @@
 # Major-Project
-A central repo for sharing resources, workflow and roadmaps.
+A central repo for sharing resources, workflows and roadmaps.
