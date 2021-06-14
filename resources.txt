@@ -1,10 +1,17 @@
-Tutorial vids
-https://youtu.be/_drqJ9SFCgU
+INFROMATION AND RESOURCES
 
-Concepts
+Tutorial vids
+https://youtu.be/_drqJ9SFCgU  (Real state tutorial)
+
+Very important programming concepts
+creating and importing a python module (files)
+namespace of functions
+how functions from other python modules are called
 Python data types: Lists, Tuples, dictionary and sets
+for loops, map function
 First class objects: https://youtu.be/kr0mpwqttM0
-method call vs function call
+method call from a library vs function call ie how obj.method() works 
+lambda function/ closures / annonyomous function
 
 Libraries
 numpy
@@ -26,4 +33,11 @@ https://nepalrealestates.com/
 https://therealtors.com.np/property/view-all-buy
 https://www.gharjagganepal.com/
 
+
+Roadmap
+1) Scrape data from all above sites
+2) Clean the data
+3) Perfrom EDA and decides variable the prediction model will use
+4) Build a model to predict/give an objective price of the house based on the parameters
+5) Deploy a model using flask and html css js
 
