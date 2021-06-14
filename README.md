@@ -6,7 +6,8 @@
 ### Tutorial videos
 * [Real estate prediction](https://youtu.be/_drqJ9SFCgU) 
 * [First Class functions](https://www.youtube.com/watch?v=kr0mpwqttM0&t=334s)
-* 
+* [ForNumpy,Pandas,Matplotlib](https://www.codingninjas.com/courses/online-data-science-course)
+
 ### Important programming concepts
 * creating and importing a python module (files)
 * namespace of functions
