@@ -1,0 +1,29 @@
+Tutorial vids
+https://youtu.be/_drqJ9SFCgU
+
+Concepts
+Python data types: Lists, Tuples, dictionary and sets
+First class objects: https://youtu.be/kr0mpwqttM0
+method call vs function call
+
+Libraries
+numpy
+pandas
+
+Websites to scrape (add more if possible)
+
+https://99aana.com/
+https://www.nepalhomes.com/
+https://hamrobazar.com
+https://www.gharbazar.com/
+https://basobaas.com/
+http://www.1ropani.com/
+https://www.gharghaderi.com/
+https://housingnepal.com
+https://www.realestateinnepal.com/
+https://nepalhomesearch.com/
+https://nepalrealestates.com/
+https://therealtors.com.np/property/view-all-buy
+https://www.gharjagganepal.com/
+
+
