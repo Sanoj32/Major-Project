@@ -1,6 +1,13 @@
 # Major-Project
 **A central repo for sharing resources, workflows and roadmaps. Add more resourses if found.**
 
+## Roadmap
+1) Scrape data from all above sites. (Currently being worked on)
+2) Clean the data and remove unnecessary variables. (Pending)
+3) Perfrom EDA and find out the relationships between variables. (Pending)
+4) Build a model to predict/give an objective price of the house based on the parameters. (Pending)
+5) Deploy the model using flask and html css js. (Pending)
+
 ## INFROMATION AND RESOURCES
 
 ### Tutorial videos
@@ -24,14 +31,13 @@
 ### Miscellaneous
 * VSCode commmand pallete
 
-
 ### Libraries (Read official docs also)
 * Numpy
 * Pandas
 * Seaborn
 * Matplotlib
 
-### Websites to scrape (add more if possible)
+## Websites to scrape (add more if possible)
 
 1.  [99aana](https://99aana.com/)
 2.  [Nepal Homes](https://www.nepalhomes.com/)
@@ -48,11 +54,5 @@
 13. [GharJagga Nepal](https://www.gharjagganepal.com/)
 
 
-### Roadmap
-1) Scrape data from all above sites.
-2) Clean the data and remove unnecessary variables.
-3) Perfrom EDA and find out the relationships between variables.
-4) Build a model to predict/give an objective price of the house based on the parameters.
-5) Deploy the model using flask and html css js.
 
 
