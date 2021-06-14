@@ -7,6 +7,8 @@
 * [Real estate prediction](https://youtu.be/_drqJ9SFCgU) 
 * [First Class functions](https://www.youtube.com/watch?v=kr0mpwqttM0&t=334s)
 * [ForNumpy,Pandas,Matplotlib](https://www.codingninjas.com/courses/online-data-science-course)
+* [Google's machine learning course](https://developers.google.com/machine-learning/crash-course/ml-intro)
+
 
 ### Important programming concepts
 * creating and importing a python module (files)
@@ -14,14 +16,22 @@
 * how functions from other python modules are called
 * Python data types: Lists, Tuples, dictionary and sets
 * for loops, map function
-* First class objects: https://youtu.be/kr0mpwqttM0
-* method call from a library vs function call ie how obj.method() works 
+* method call from a library vs function call ie how obj.method() works
 * lambda function/closures/annonyomous function
+* [Python virtual environmets](https://docs.python.org/3/library/venv.html)
 
-### Libraries
+### Important Statistics Concepts
+* Co-relation between variables
+
+### Miscellaneous
+* VSCode commmand pallete
+
+
+### Libraries (Read official docs also)
 * numpy
 * pandas
 * seaborn
+* matplotlib
 
 ### Websites to scrape (add more if possible)
 
@@ -41,9 +51,9 @@
 
 
 ### Roadmap
-1) Scrape data from all above sites
-2) Clean the data
-3) Perfrom EDA and decides variable the prediction model will use
+1) Scrape data from all above sites.
+2) Clean the data and remove unnecessary variables.
+3) Perfrom EDA and find out the relationships between variables
 4) Build a model to predict/give an objective price of the house based on the parameters
 5) Deploy a model using flask and html css js
 
