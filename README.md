@@ -6,6 +6,7 @@
 ### Tutorial videos
 * [Real estate prediction](https://youtu.be/_drqJ9SFCgU) 
 * [First Class functions](https://www.youtube.com/watch?v=kr0mpwqttM0&t=334s)
+* For Numpy,Pandas,Matplotlib basics(vscode://vscode.github-authentication/did-authenticate?windowid=1&code=6a094bd0a8a184b92d4a&state=7657078e-101f-4f8d-8c19-2a0de58700ab)
 * 
 ### Important programming concepts
 * creating and importing a python module (files)
