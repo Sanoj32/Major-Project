@@ -1,18 +1,20 @@
 # Major-Project
-**A central repo for sharing resources, workflows and roadmaps. Add more resourses if found.**
+**A central repo for sharing resources, workflows and roadmaps. Learn how to edit a markdown file and add more resourses if found. Check the projects section for project managemet plans.**
 
 ## Roadmap
-1) Scrape data from all above sites. (Currently being worked on)
-2) Clean the data and remove unnecessary variables. (Pending)
+0) Project proposal (In development)
+1) Scrape data from all above sites. (In development)
+2) Clean the data and remove unnecessary variables and noise. (Pending)
 3) Perfrom EDA and find out the relationships between variables. (Pending)
 4) Build a model to predict/give an objective price of the house based on the parameters. (Pending)
-5) Deploy the model using flask and html css js. (Pending)
+5) Deploy the model using flask(Api), HTML, CSS, JS and PHP/Laravel(Backend). (Pending)
+6) Documentation (Pending)
 
 ## INFROMATION AND RESOURCES
 
 ### Tutorial videos
 * [Real estate prediction](https://youtu.be/_drqJ9SFCgU)
-* [First class functions](https://www.youtube.com/watch?v=kr0mpwqttM0&t=334s) 
+* [First class functions](https://www.youtube.com/watch?v=kr0mpwqttM0&t=334s)
 * [Google's machine learning course](https://developers.google.com/machine-learning/crash-course/ml-intro)
 
 ### Important programming concepts
@@ -24,20 +26,23 @@
 * method call from a library vs function call ie how obj.method() works
 * lambda function/closures/annonyomous function
 * [Python virtual environmets](https://docs.python.org/3/library/venv.html)
+* Basics of Object oriented python. Python class constructors. How a function gets access to the object it is called upon and how it manipulates the object.
+* What is anacodna?
 
-### Important Statistics Concepts
+### Important Statistics Concepts (Add more)
 * Co-relation between variables
 
-### Miscellaneous
+### Miscellaneous 
 * VSCode commmand pallete
+* [Spyder](https://www.spyder-ide.org/)
 
-### Libraries (Read official docs also)
+### Libraries (Must read official docs)
 * Numpy
 * Pandas
 * Seaborn
 * Matplotlib
 
-## Websites to scrape (add more if possible)
+## Websites to scrape (find more)
 
 1.  [99aana](https://99aana.com/)
 2.  [Nepal Homes](https://www.nepalhomes.com/)
@@ -52,7 +57,5 @@
 11. [Nepal Realestates](https://nepalrealestates.com/)
 12. [The Realtors](https://therealtors.com.np/property/view-all-buy)
 13. [GharJagga Nepal](https://www.gharjagganepal.com/)
-
-
 
 
