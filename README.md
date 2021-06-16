@@ -51,18 +51,33 @@
 
 ## Websites to scrape (find more)
 
-1.  [99aana](https://99aana.com/) - upto /page/668
-2.  [Nepal Homes](https://www.nepalhomes.com/) - Selenium?
-3.  [Hamrobazar](https://hamrobazar.com)
-4.  [Gharbazar](https://www.gharbazar.com/)
-5.  [Basobaas](https://basobaas.com/)
-6.  [1Ropani](http://www.1ropani.com/)
-7.  [Gharghaderi](https://www.gharghaderi.com/)
-8.  [Housing Nepal](https://housingnepal.com)
-9.  [Real Estate In Nepal](https://www.realestateinnepal.com/)
-10. [Nepal Home Search](https://nepalhomesearch.com/)
-11. [Nepal Realestates](https://nepalrealestates.com/)
-12. [The Realtors](https://therealtors.com.np/property/view-all-buy)
-13. [GharJagga Nepal](https://www.gharjagganepal.com/)
+1.  [99aana](https://99aana.com/) - upto /page/668 with BS4
+2.  [Nepal Homes](https://www.nepalhomes.com/) - Might need Selenium
+3.  [Hamrobazar](https://hamrobazar.com) 
+4.  [Gharbazar](https://www.gharbazar.com/) - Selenium
+5.  [Basobaas](https://basobaas.com/) - Selemium
+6.  [1Ropani](http://www.1ropani.com/) - BS4
+7.  [Gharghaderi](https://www.gharghaderi.com/) - Selenium
+8.  [Housing Nepal](https://housingnepal.com) - BS4
+9.  [Real Estate In Nepal](https://www.realestateinnepal.com/) - BS4
+10. [Nepal Home Search](https://nepalhomesearch.com/) -BS4
+11. [Nepal Realestates](https://nepalrealestates.com/) -BS4 very low amount of data
+12. [The Realtors](https://therealtors.com.np/property/view-all-buy) - search with selenium and scrapte with BS4. Scan title for house keyword. Not properly catagorized
+13. [GharJagga Nepal](https://www.gharjagganepal.com/) - BS4
+
+## Parameters (*subject to change*)
+1. Price
+2. Location in District
+3. Number of rooms
+4. Number of floors
+5. Area
+6. Road ahead of the house *
+7. Bedrooms *
+8. Bathrooms *
+9. Garage * 
+10. Car parking *
+11. kitchen *
+12. Living room *
+13. Furnished ? *
 
 
