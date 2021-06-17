@@ -1,5 +1,5 @@
 # Major-Project
-**A central repo for sharing resources, workflows and roadmaps. Learn how to edit a markdown file and add more resourses if found. Check the [Projects](https://github.com/Sanoj32/Major-Project/projects) section for project managemet plans.**
+**A central repo for sharing resources, workflows and roadmaps. Learn how to edit a markdown file and add more resourses if found.  Check the [Projects](https://github.com/Sanoj32/Major-Project/projects) section for project managemet plans.**
 
 ## Roadmap
 0) Project proposal (In development)
@@ -38,10 +38,13 @@
 * Co-relation between variables
 
 ### Miscellaneous
+* [Basobass data](https://www.kaggle.com/sagyamthapa/nepali-housing-price-dataset?select=2020-4-27.csv)
 * Using VSCode commmand pallete
 * [The Spyder IDE](https://www.spyder-ide.org/)
 * [Markdown](https://guides.github.com/features/mastering-markdown/)
 * [Land measurement](https://en.wikipedia.org/wiki/Nepalese_customary_units_of_measurement)
+* [Creating checkmarks in projects](https://docs.github.com/en/issues/king-your-work-with-issues/creating-issues/about-task-lists)
+* [How Much Training Data is Required for Machine Learning? (Article)](https://machinelearningmastery.com/much-training-data-required-machine-learning/)
 
 ### Libraries (Must read official docs)
 * [Numpy](https://numpy.org/doc/stable/)
@@ -50,12 +53,13 @@
 * [Matplotlib](https://matplotlib.org/stable/contents.html)
 
 ## Websites to scrape (find more)
+Always try to check if the data is in kaggle before writing a script yourself.
 
 1.  [99aana](https://99aana.com/) - upto /page/668 with BS4
 2.  [Nepal Homes](https://www.nepalhomes.com/) - Might need Selenium
-3.  [Hamrobazar](https://hamrobazar.com) 
+3.  [Hamrobazar](https://hamrobazar.com)
 4.  [Gharbazar](https://www.gharbazar.com/) - Selenium
-5.  [Basobaas](https://basobaas.com/) - Selemium
+5.  [Basobaas](https://basobaas.com/) - Selenium (found on kaggle)
 6.  [1Ropani](http://www.1ropani.com/) - BS4
 7.  [Gharghaderi](https://www.gharghaderi.com/) - Selenium
 8.  [Housing Nepal](https://housingnepal.com) - BS4
@@ -71,13 +75,15 @@
 3. Number of rooms
 4. Number of floors
 5. Area
-6. Road ahead of the house *
-7. Bedrooms *
-8. Bathrooms *
-9. Garage * 
-10. Car parking *
-11. kitchen *
-12. Living room *
-13. Furnished ? *
+6. Time posted
+7. Road ahead of the house *
+8. Room size *
+9. Bedrooms *
+10. Bathrooms *
+11. Garage *
+12. Car parking *
+13. kitchen *
+14. Living room *
+15. Furnished ? *
 
 
