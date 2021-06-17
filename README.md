@@ -3,7 +3,7 @@
 
 ## Roadmap
 0) Project proposal (In development)
-1) Scrape data from all above sites. (In development)
+1) Scrape data from all sites mentioned [below](https://github.com/Sanoj32/Major-Project#websites-to-scrape-find-more). (In development)
 2) Clean the data and remove unnecessary variables and noise. (Pending)
 3) Perfrom EDA and find out the relationships between variables. (Pending)
 4) Build a model to predict/give an objective price of the house based on the parameters. (Pending)
