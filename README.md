@@ -19,6 +19,8 @@
 * [Google's machine learning course](https://developers.google.com/machine-learning/crash-course/ml-intro)
 * [Pip Python package manager](https://youtu.be/U2ZN104hIcc)
 * [Setting up python virtual env in VSCode](https://youtu.be/Wuuiga0wKdQ)
+* [Data Science Handbook](https://tanthiamhuat.files.wordpress.com/2018/04/pythondatasciencehandbook.pdf)
+
 
 
 ### Important programming concepts
