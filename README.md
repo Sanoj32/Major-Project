@@ -38,7 +38,7 @@
 
 ### Important Statistics Concepts (Add more)
 * Co-relation between variables
-* [Linear/Multiple](https://youtu.be/yIYKR4sgzI8)/Lo[[[](https://youtu.be/PaFPbb66DxQ)](https://youtu.be/PaFPbb66DxQ)](https://youtu.be/PaFPbb66DxQ)gistic reression
+* [Linear/Multiple](https://youtu.be/yIYKR4sgzI8)/Logistic reression
 * p-value, level of significance, null and alternate hypothesis.
 
 ### Algorithms (listed possible best to worst)
