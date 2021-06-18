@@ -3,7 +3,7 @@
 
 ## Roadmap
 0) Project proposal (In development)
-1) Scrape data from all sites mentioned [below](https://github.com/Sanoj32/Major-Project#websites-to-scrape-find-more). (In development)
+1) Scrape data from all sites mentioned [below](#websites-to-scrape). (In development)
 2) Clean the data and remove unnecessary variables and noise. (Pending)
 3) Perfrom EDA and find out the relationships between variables. (Pending)
 4) Build a model to predict/give an objective price of the house based on the parameters. (Pending)
@@ -36,6 +36,16 @@
 
 ### Important Statistics Concepts (Add more)
 * Co-relation between variables
+* [Linear/Multiple](https://youtu.be/yIYKR4sgzI8)/Lo[[[](https://youtu.be/PaFPbb66DxQ)](https://youtu.be/PaFPbb66DxQ)](https://youtu.be/PaFPbb66DxQ)gistic reression
+* p-value, level of significance, null and alternate hypothesis.
+
+### Algorithms (listed possible best to worst)
+1. Logistic regression - Related = Wald's test
+2. Convolution neural networks
+3. Random forest
+4. ID3
+
+Use waka as a testing tool and may use external librariess to check efficiency of the model.
 
 ### Miscellaneous
 * [Basobass data](https://www.kaggle.com/sagyamthapa/nepali-housing-price-dataset?select=2020-4-27.csv)
@@ -52,10 +62,10 @@
 * [Seaborn](https://seaborn.pydata.org/introduction.htmlZ)
 * [Matplotlib](https://matplotlib.org/stable/contents.html)
 
-## Websites to scrape (find more)
+## Websites to scrape
 Always try to check if the data is in kaggle before writing a script yourself.
 
-1.  [99aana](https://99aana.com/) - upto /page/668 with BS4
+1.  [99aana](https://99aana.com/properties/?_offer_type=sale&keyword_search=&_listing=&realteo_order=date-desc&_property_type=houses&_price_min=&_price_max=) - BS4
 2.  [Nepal Homes](https://www.nepalhomes.com/) - Might need Selenium
 3.  [Hamrobazar](https://hamrobazar.com)
 4.  [Gharbazar](https://www.gharbazar.com/) - Selenium
