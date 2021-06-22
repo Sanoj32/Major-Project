@@ -42,7 +42,7 @@
 * p-value, level of significance, null and alternate hypothesis.
 
 ### Algorithms (listed possible best to worst)
-1. Logistic regression - Related = Wald's test
+1. Linear regression - Related = Wald's test
 2. Convolution neural networks
 3. Random forest
 4. ID3
@@ -59,6 +59,7 @@ Use waka as a testing tool and may use external librariess to check efficiency o
 * [How Much Training Data is Required for Machine Learning? (Article)](https://machinelearningmastery.com/much-training-data-required-machine-learning/)
 
 ### Libraries (Must read official docs)
+Go through the basic contents of the docs atleast once
 * [Numpy](https://numpy.org/doc/stable/)
 * [Pandas](https://pandas.pydata.org/docs/)
 * [Seaborn](https://seaborn.pydata.org/introduction.htmlZ)
