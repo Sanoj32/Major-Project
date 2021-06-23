@@ -38,14 +38,14 @@
 
 ### Important Statistics Concepts (Add more)
 * Co-relation between variables
-* [Linear/Multiple](https://youtu.be/yIYKR4sgzI8)/Lo[[[](https://youtu.be/PaFPbb66DxQ)](https://youtu.be/PaFPbb66DxQ)](https://youtu.be/PaFPbb66DxQ)gistic reression
+* [Linear/Multiple](https://youtu.be/yIYKR4sgzI8)/Logistic reression
 * p-value, level of significance, null and alternate hypothesis.
 
 ### Importatn Machine learning Comncepts
 *  One hot encoding
 *  Dummy variable trap
 ### Algorithms (listed possible best to worst)
-1. Logistic regression - Related = Wald's test
+1. Linear regression - Related = Wald's test
 2. Convolution neural networks
 3. Random forest
 4. ID3
@@ -62,6 +62,7 @@ Use waka as a testing tool and may use external librariess to check efficiency o
 * [How Much Training Data is Required for Machine Learning? (Article)](https://machinelearningmastery.com/much-training-data-required-machine-learning/)
 
 ### Libraries (Must read official docs)
+Go through the basic contents of the docs atleast once
 * [Numpy](https://numpy.org/doc/stable/)
 * [Pandas](https://pandas.pydata.org/docs/)
 * [Seaborn](https://seaborn.pydata.org/introduction.htmlZ)
