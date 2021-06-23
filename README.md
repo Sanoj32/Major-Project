@@ -41,6 +41,9 @@
 * [Linear/Multiple](https://youtu.be/yIYKR4sgzI8)/Lo[[[](https://youtu.be/PaFPbb66DxQ)](https://youtu.be/PaFPbb66DxQ)](https://youtu.be/PaFPbb66DxQ)gistic reression
 * p-value, level of significance, null and alternate hypothesis.
 
+### Importatn Machine learning Comncepts
+*  One hot encoding
+*  Dummy variable trap
 ### Algorithms (listed possible best to worst)
 1. Logistic regression - Related = Wald's test
 2. Convolution neural networks
