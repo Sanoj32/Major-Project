@@ -20,6 +20,7 @@
 * [Pip Python package manager](https://youtu.be/U2ZN104hIcc)
 * [Setting up python virtual env in VSCode](https://youtu.be/Wuuiga0wKdQ)
 * [Data Science Handbook](https://tanthiamhuat.files.wordpress.com/2018/04/pythondatasciencehandbook.pdf)
+* [Mathematics for machine learning *Book*](https://mml-book.github.io/book/mml-book.pdf)
 
 
 
@@ -39,7 +40,9 @@
 ### Important Statistics Concepts (Add more)
 * Co-relation between variables
 * [Linear/Multiple](https://youtu.be/yIYKR4sgzI8)/Logistic reression
+* [Squared error of regression line](https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/more-on-regression/v/squared-error-of-regression-line)
 * p-value, level of significance, null and alternate hypothesis.
+* Fit a line using least square method.
 
 ### Importatn Machine learning Comncepts
 *  One hot encoding
