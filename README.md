@@ -42,7 +42,9 @@
 * [Linear/Multiple](https://youtu.be/yIYKR4sgzI8)/Logistic reression
 * [Squared error of regression line](https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/more-on-regression/v/squared-error-of-regression-line)
 * p-value, level of significance, null and alternate hypothesis.
+* Gradient descent
 * Fit a line using least square method.
+
 
 ### Importatn Machine learning Comncepts
 *  One hot encoding
