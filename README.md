@@ -37,12 +37,13 @@
 * What is anacodna?
 * How pip works
 
-### Important Statistics Concepts (Add more)
+### Important Mathematics and Statistics Concepts (Add more)
 * Co-relation between variables
 * [Linear/Multiple](https://youtu.be/yIYKR4sgzI8)/Logistic reression
 * [Squared error of regression line](https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/more-on-regression/v/squared-error-of-regression-line)
 * p-value, level of significance, null and alternate hypothesis.
 * Fit a line using least square method.
+* Vectors, Partial derivative, gradient of a function and gradient descent.
 
 ### Importatn Machine learning Comncepts
 *  One hot encoding
