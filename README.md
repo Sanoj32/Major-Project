@@ -42,12 +42,12 @@
 * [Linear/Multiple](https://youtu.be/yIYKR4sgzI8)/Logistic reression
 * [Squared error of regression line](https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/more-on-regression/v/squared-error-of-regression-line)
 * p-value, level of significance, null and alternate hypothesis.
-* Gradient descent
+* Gradient descent, contour plot
 * Fit a line using least square method.
 * Vectors, Partial derivative, gradient of a function and gradient descent.
 
 
-### Importatn Machine learning Comncepts
+### Important Machine learning Comncepts
 *  One hot encoding
 *  Dummy variable trap
 ### Algorithms (listed possible best to worst)
@@ -77,7 +77,7 @@ Go through the basic contents of the docs atleast once
 ## Websites to scrape
 Always try to check if the data is in kaggle before writing a script yourself.
 
-1.  [99aana](https://99aana.com/properties/?_offer_type=sale&keyword_search=&_listing=&realteo_order=date-desc&_property_type=houses&_price_min=&_price_max=) - BS4
+1.  [99aana](https://99aana.com/properties/?_offer_type=sale&keyword_search=&_listing=&realteo_order=date-desc&_property_type=houses&_price_min=&_price_max=) - BS4 https://99aana.com/properties/page/(1 to 290)/?_offer_type=sale&keyword_search&_listing&realteo_order=date-desc&_property_type=houses&_price_min&_price_max
 2.  [Nepal Homes](https://www.nepalhomes.com/) - Might need Selenium
 3.  [Hamrobazar](https://hamrobazar.com)
 4.  [Gharbazar](https://www.gharbazar.com/) - Selenium
