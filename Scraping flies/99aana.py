@@ -1,4 +1,3 @@
-from re import L
 from bs4 import BeautifulSoup
 import requests
 import csv
@@ -7,7 +6,7 @@ import sys
 
 data = [] # This is used to store the rows of csv file
 
-for count in range(1,5):
+for count in range(1,2):
     source = requests.get("https://99aana.com/properties/page/" + str(count) + "?_offer_type=sale&keyword_search&_listing&realteo_order=date-desc&_property_type=houses&_price_min&_price_max").text
     soup = BeautifulSoup(source,'lxml')
     links = [] # these contain the links to the pages where the housing details are stored
@@ -100,7 +99,7 @@ for count in range(1,5):
 
 
 headers = ['title','price','location','district','floor','room','bedroom','bathroom','living_room','kitchen','parking','link']
-with open ('99aana.csv','w', newline='') as f:
+with open ("csv-files/99aana.csv",'w', newline='') as f:
     writer = csv.writer(f)
     writer.writerow(headers)
     writer.writerows(data)
