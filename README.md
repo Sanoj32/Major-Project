@@ -79,17 +79,17 @@ Always try to check if the data is in kaggle before writing a script yourself.
 
 1.  [99aana](https://99aana.com/properties/?_offer_type=sale&keyword_search=&_listing=&realteo_order=date-desc&_property_type=houses&_price_min=&_price_max=) - BS4 https://99aana.com/properties/page/(1 to 290)/?_offer_type=sale&keyword_search&_listing&realteo_order=date-desc&_property_type=houses&_price_min&_price_max
 2.  [Nepal Homes](https://www.nepalhomes.com/) - Might need Selenium
-3.  [Hamrobazar](https://hamrobazar.com)
+3.  [Hamrobazar](https://hamrobazar.com) - presents a captcha to check for bots
 4.  [Gharbazar](https://www.gharbazar.com/) - Selenium
 5.  [Basobaas](https://basobaas.com/) - Selenium (found on kaggle)
 6.  [1Ropani](http://www.1ropani.com/) - BS4
 7.  [Gharghaderi](https://www.gharghaderi.com/) - Selenium
 8.  [Housing Nepal](https://housingnepal.com) - BS4
 9.  [Real Estate In Nepal](https://www.realestateinnepal.com/) - BS4
-10. [Nepal Home Search](https://nepalhomesearch.com/) -BS4
+10. [Nepal Home Search](https://nepalhomesearch.com/) -BS4 (140 properties may not be worth it)
 11. [Nepal Realestates](https://nepalrealestates.com/) -BS4 very low amount of data
 12. [The Realtors](https://therealtors.com.np/property/view-all-buy) - search with selenium and scrapte with BS4. Scan title for house keyword. Not properly catagorized
-13. [GharJagga Nepal](https://www.gharjagganepal.com/) - BS4
+13. [GharJagga Nepal](https://www.gharjagganepal.com/) - Infinite scrolling (selenium)
 
 ## Parameters (*subject to change*)
 1. Price

@@ -45,10 +45,10 @@ for count in range(1,2):
         floor = soup.get_text(strip=True)
         if "storied" in floor:
             floor = floor.split("storied")[0].split()[-1]
-            
+
         elif "stories" in floor:
             floor = floor.split("stories")[0].split()[-1]
-   
+
         # misc = living room, Bathroom and Kitchen also bedrooms,bathrooms , and rooms written after property highlights
         misc = soup.findAll('ul')[2]
         misc = misc.findAll('li')
@@ -104,4 +104,7 @@ with open ("csv-files/99aana.csv",'w', newline='') as f:
     writer.writerow(headers)
     writer.writerows(data)
 
-# store the column name of csv file
+print('-----------------------------------------------------------------------------')       
+print('99aana.csv generated')       
+print('-----------------------------------------------------------------------------')
+
