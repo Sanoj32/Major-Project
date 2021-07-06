@@ -104,7 +104,7 @@ with open ("csv-files/99aana.csv",'w', newline='') as f:
     writer.writerow(headers)
     writer.writerows(data)
 
-print('-----------------------------------------------------------------------------')       
-print('99aana.csv generated')       
+print('-----------------------------------------------------------------------------')
+print('99aana.csv generated')
 print('-----------------------------------------------------------------------------')
 
