@@ -80,9 +80,9 @@ Always try to check if the data is in kaggle before writing a script yourself.
 1.  [99aana](https://99aana.com/properties/?_offer_type=sale&keyword_search=&_listing=&realteo_order=date-desc&_property_type=houses&_price_min=&_price_max=) - BS4 https://99aana.com/properties/page/(1 to 290)/?_offer_type=sale&keyword_search&_listing&realteo_order=date-desc&_property_type=houses&_price_min&_price_max
 2.  [Nepal Homes](https://www.nepalhomes.com/) - Might need Selenium
 3.  [Hamrobazar](https://hamrobazar.com) - presents a captcha to check for bots. 3k properties.
-4.  [Gharbazar](https://www.gharbazar.com/) - Selenium
+4.  [Gharbazar](https://www.gharbazar.com/) - Selenium  (300 data)
 5.  [Basobaas](https://basobaas.com/) - Selenium (found on kaggle)
-6.  [1Ropani](http://www.1ropani.com/) - BS4
+6.  [1Ropani](http://www.1ropani.com/) - BS4 (607 houses)
 7.  [Gharghaderi](https://www.gharghaderi.com/) - Selenium
 8.  [Housing Nepal](https://housingnepal.com) - BS4
 9.  [Real Estate In Nepal](https://www.realestateinnepal.com/) - BS4
