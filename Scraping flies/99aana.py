@@ -15,7 +15,7 @@ for count in range(1,2):
         link = title.find('a')['href']
         links.append(link)
     for link in links:
-        title = price = location = floor = room = bedroom = bathroom = living_room = kitchen = parking = None
+        title = price = location = floor = room = bedroom = bathroom = livingroom = kitchen = parking = None
         source = requests.get(link).text
         soup = BeautifulSoup(source,'lxml')
 
@@ -56,9 +56,9 @@ for count in range(1,2):
         for li in misc:
             if "livingroom" in li.text.lower() and "total" in li.text.lower():
                 if ":" in li.text.lower():
-                    living_room = li.get_text(strip=True).split(':')[1]
+                    livingroom = li.get_text(strip=True).split(':')[1]
                 else:
-                    living_room = li.get_text(strip=True).split('-')[1]
+                    livingroom = li.get_text(strip=True).split('-')[1]
             if "kitchen" in li.text.lower() and "total" in li.text.lower():
                 if ":" in li.text.lower():
                     kitchen = li.get_text(strip=True).split(':')[1]
@@ -91,14 +91,14 @@ for count in range(1,2):
                 parking = 1
 
 
-        row = [title,price,location,district,floor,room,bedroom,bathroom,living_room,kitchen,parking,link]
+        row = [title,price,location,district,floor,room,bedroom,bathroom,livingroom,kitchen,parking,link]
         data.append(row)
         print(row)
 
         print('-----------------------------------------------------------------------------')
 
 
-headers = ['title','price','location','district','floor','room','bedroom','bathroom','living_room','kitchen','parking','link']
+headers = ['title','price','location','district','floor','room','bedroom','bathroom','livingroom','kitchen','parking','link']
 with open ("csv-files/99aana.csv",'w', newline='') as f:
     writer = csv.writer(f)
     writer.writerow(headers)

@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import csv
-
+import sys
 
 URL = "http://www.1ropani.com/House.aspx"
 r = requests.get(URL)
@@ -24,6 +24,8 @@ Total_content = soup.findAll('div', {'class': 'list_desc'})
 for element in Total_content:
     # Final_Location=Price=Area= None
     New = element.findAll('b')
+    print(New)
+    sys.exit()
     Location = New[1].text
     print(Location, end=" ")
     Final_Location = Location[0].replace(',', '|')[0]
@@ -50,3 +52,4 @@ with open('csv-flies/1Ropani.csv', 'w', newline='') as f:
 
 
 # f.close()
+

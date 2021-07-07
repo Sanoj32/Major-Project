@@ -1,13 +1,15 @@
+from base64 import b16encode
+from os import link
 import requests
 from bs4 import BeautifulSoup
 import csv
 from selenium import webdriver
 import time
+import sys
 
 
 
 
-# Edited by sanoj
 
 # function to get links from the 1Ropani website
 def get_links():
@@ -66,4 +68,75 @@ def remove_apartment():
         reader = csv.reader(f)
 
 
-get_links()
+
+def Ropani():
+    data = []
+    # get links from 1Ropani_links.csv
+    links = []
+    with open('csv-files/1Ropani_links.csv', 'r') as f:
+        reader = csv.reader(f)
+        # start from 2nd item
+        for row in reader:
+            links.append(row[0])
+
+    #slicing to remove column name
+    links = links[1:]
+    # slicing 10 links for testing
+
+    links = links[:30]
+    for link in links:
+        source = requests.get(link).text
+        soup = BeautifulSoup(source, 'lxml')
+        soup = soup.find('div',{'id':'property_detail'})
+        title = soup.find('h2').get_text(strip=True)
+        print("Title: ", link)
+        price = soup.find('span',{'class':'price'}).get_text(strip=True).split('|')[0]
+        if "on call" in price:
+            continue
+        else:
+            price = price.split('Rs.')[1].strip()
+        print("Price: ",price)
+        location = soup.find('td',attrs = {'style' : 'width: 200px; padding-left: 5px; padding-right: 15px;'}).get_text(strip=True).split('Land Description:')[0].split(':')[1]
+        print('location: ',location)
+        district = location.split(',')[0]
+        print("district: ",district)
+        area = soup.find('td',attrs = {'style' : 'width: 200px; padding-left: 5px; padding-right: 15px;'}).get_text(strip=True).split('Price:')[0].split('Area:')[1].strip()
+        print('area: ',area)
+        #feature_list = ul with floor, bedroom, bath, kitchen, living room
+        feature_list = soup.find('ul',{'class':'feature_list'})
+        for li in feature_list.find_all('li'):
+            if 'floor' in li.get_text().lower():
+                floor = li.get_text(strip=True)
+            if 'bed' in li.get_text().lower():
+                bedroom = li.get_text(strip=True)
+            if 'bath' in li.get_text().lower():
+                bathroom = li.get_text(strip=True)
+            if 'living' in li.get_text().lower():
+                livingroom = li.get_text(strip=True)
+            if 'kitchen' in li.get_text().lower():
+                kitchen = li.get_text(strip=True)
+        print("floor: ",floor)
+        print("bedroom: ",bedroom)
+        print("livingroom: ",livingroom)
+        print("bathroom: ",bathroom)
+
+        if 'parking' in soup.text.lower():
+            parking = 1
+        else:
+            parking = 0
+        print(parking)
+        room = None # It does not provide total rooms
+        print('----------------------------------------------------------------')
+        row = [title,price,location,district,floor,room,bedroom,bathroom,livingroom,kitchen,parking,link]
+        data.append(row)
+
+        headers = ['title','price','location','district','floor','room','bedroom','bathroom','livingroom','kitchen','parking','link']
+        with open ("csv-files/1Roapni.csv",'w', newline='') as f:
+            writer = csv.writer(f)
+            writer.writerow(headers)
+            writer.writerows(data)
+
+Ropani()
+
+# Notes
+# This website has no total rooms and gives details about parking cars or bikes etc.
