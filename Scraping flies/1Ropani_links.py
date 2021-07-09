@@ -58,7 +58,6 @@ def get_links():
 
 
 def ek_ropani():
-    headers = ['title','price','location','district','floor','room','bedroom','bathroom','livingroom','kitchen','parking','link']
 
     # get links from 1Ropani_links.csv
     links = []
