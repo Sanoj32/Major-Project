@@ -117,4 +117,3 @@ def aana():
     print('-----------------------------------------------------------------------------')
 
 aana()
-# function to get the square of a number

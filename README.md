@@ -78,9 +78,9 @@ Go through the basic contents of the docs atleast once
 Always try to check if the data is in kaggle before writing a script yourself.
 
 1.  [99aana](https://99aana.com/properties/?_offer_type=sale&keyword_search=&_listing=&realteo_order=date-desc&_property_type=houses&_price_min=&_price_max=) - BS4 https://99aana.com/properties/page/(1 to 290)/?_offer_type=sale&keyword_search&_listing&realteo_order=date-desc&_property_type=houses&_price_min&_price_max
-2.  [Nepal Homes](https://www.nepalhomes.com/) - Might need Selenium
+2.  [Nepal Homes](https://www.nepalhomes.com/list/&sort=1&page=1&agency_id=&is_project=&find_district_id=&find_area_id=&find_property_category=5d660cb27682d03f547a6c4a&find_property_type=5d70b3df4139ae34c8fbab94) - Might need Selenium Roughly 1k data.
 3.  [Hamrobazar](https://hamrobazar.com) - presents a captcha to check for bots. 3k properties.
-4.  [Gharbazar](https://www.gharbazar.com/) - Selenium  (300 data)
+4.  [Gharbazar](https://www.gharbazar.com/) - Selenium  (300 data) Scan for house keyword in title. impure results on search filter.
 5.  [Basobaas](https://basobaas.com/) - Selenium (found on kaggle)
 6.  [1Ropani](http://www.1ropani.com/) - BS4 (607 houses)
 7.  [Gharghaderi](https://www.gharghaderi.com/) - Selenium
