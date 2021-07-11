@@ -13,6 +13,7 @@
 ## INFROMATION AND RESOURCES
 
 ### Tutorial videos
+* [Coursera linear regression (Very important course)](https://www.coursera.org/lecture/ml-regression/using-the-fitted-line-RjYbf)
 * [Real estate prediction](https://www.youtube.com/watch?v=rdfbcdP75KI&list=PLeo1K3hjS3uu7clOTtwsp94PcHbzqpAdg)
 * [First Class functions](https://www.youtube.com/watch?v=kr0mpwqttM0&t=334s)
 * [For Numpy, Pandas and Matplotlib](https://www.codingninjas.com/courses/online-data-science-course)
@@ -98,14 +99,20 @@ Always try to check if the data is in kaggle before writing a script yourself.
 4. Number of floors
 5. Area
 6. Time posted
-7. Road ahead of the house *
+7. Road size and road type*
 8. Room size *
 9. Bedrooms *
 10. Bathrooms *
-11. Garage *
-12. Car parking *
-13. kitchen *
-14. Living room *
+11. Car parking *
+12. kitchen *
+13. Living room *
+14. Garage
 15. Furnished ? *
+
+### [Naming convention](https://softwareengineering.stackexchange.com/questions/308972/python-file-naming-convention)
+* Files/Modules and variables = snake_case
+* directories = all lowercase preferably without underscores
+* classes = PascalCase
+
 
 

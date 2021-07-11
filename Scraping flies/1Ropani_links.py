@@ -23,7 +23,7 @@ def get_links():
             time.sleep(6)
 
             # first row and last row contains navigation links and all inbetween contains the house links
-            # get all links from the navigation table and store it in a csv file named as 1Ropani_links.csv
+            # get all links from the navigation table and store it in a csv file named as 1ropani_links.csv
 
     # looping throuh 7 pages after setting 100 results per page.
     for i in range(1,8):
@@ -49,8 +49,8 @@ def get_links():
 
 
 
-    #save links in a csv file named as 1Ropani_links.csv
-    with open('csv-files/1Ropani_links.csv', 'w',newline='') as f:
+    #save links in a csv file named as 1ropani_links.csv
+    with open('csv-files/1ropani_links.csv', 'w',newline='') as f:
         writer = csv.writer(f)
         writer.writerow(header)
         writer.writerows(links)
@@ -59,9 +59,9 @@ def get_links():
 
 def ek_ropani():
 
-    # get links from 1Ropani_links.csv
+    # get links from 1ropani_links.csv
     links = []
-    with open('csv-files/1Ropani_links.csv', 'r') as f:
+    with open('csv-files/1ropani_links.csv', 'r') as f:
         reader = csv.reader(f)
         # start from 2nd item
         for row in reader:

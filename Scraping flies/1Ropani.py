@@ -46,7 +46,7 @@ for element in Total_content:
 
 
 headers = ['Location', 'Price', 'Area']
-with open('csv-flies/1Ropani.csv', 'w', newline='') as f:
+with open('csv-flies/1ropani.csv', 'w', newline='') as f:
 	writer = csv.writer(f)
 	writer.writerow(headers)
 	writer.writerows(data)
