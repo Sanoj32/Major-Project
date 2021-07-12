@@ -13,7 +13,8 @@
 ## INFROMATION AND RESOURCES
 
 ### Tutorial videos
-* [Coursera linear regression (Very important course)](https://www.coursera.org/lecture/ml-regression/using-the-fitted-line-RjYbf)
+* [Coursera linear regression ](https://www.coursera.org/lecture/ml-regression/using-the-fitted-line-RjYbf) Good for conceptual learning. Uses outdated libraries from 2015
+* [Gradient descent](https://youtu.be/sDv4f4s2SB8) Very important
 * [Real estate prediction](https://www.youtube.com/watch?v=rdfbcdP75KI&list=PLeo1K3hjS3uu7clOTtwsp94PcHbzqpAdg)
 * [First Class functions](https://www.youtube.com/watch?v=kr0mpwqttM0&t=334s)
 * [For Numpy, Pandas and Matplotlib](https://www.codingninjas.com/courses/online-data-science-course)
@@ -43,7 +44,7 @@
 * [Linear/Multiple](https://youtu.be/yIYKR4sgzI8)/Logistic reression
 * [Squared error of regression line](https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/more-on-regression/v/squared-error-of-regression-line)
 * p-value, level of significance, null and alternate hypothesis.
-* Gradient descent, contour plot
+* contour plot
 * Fit a line using least square method.
 * Vectors, Partial derivative, gradient of a function and gradient descent.
 
@@ -70,7 +71,7 @@ Use waka as a testing tool and may use external librariess to check efficiency o
 
 ### Libraries (Must read official docs)
 Go through the basic contents of the docs atleast once
-* [Numpy](https://numpy.org/doc/stable/)
+* [Numpy](https://numpy.org/doc/stable/) (Vectorization and broadcasting in Numpy)
 * [Pandas](https://pandas.pydata.org/docs/)
 * [Seaborn](https://seaborn.pydata.org/introduction.htmlZ)
 * [Matplotlib](https://matplotlib.org/stable/contents.html)
@@ -78,7 +79,7 @@ Go through the basic contents of the docs atleast once
 ## Websites to scrape
 Always try to check if the data is in kaggle before writing a script yourself.
 
-1.  [99aana](https://99aana.com/properties/?_offer_type=sale&keyword_search=&_listing=&realteo_order=date-desc&_property_type=houses&_price_min=&_price_max=) - BS4 https://99aana.com/properties/page/(1 to 290)/?_offer_type=sale&keyword_search&_listing&realteo_order=date-desc&_property_type=houses&_price_min&_price_max
+1.  99aana (Done)
 2.  [Nepal Homes](https://www.nepalhomes.com/list/&sort=1&page=1&agency_id=&is_project=&find_district_id=&find_area_id=&find_property_category=5d660cb27682d03f547a6c4a&find_property_type=5d70b3df4139ae34c8fbab94) - Might need Selenium Roughly 1k data.
 3.  [Hamrobazar](https://hamrobazar.com) - presents a captcha to check for bots. 3k properties.
 4.  [Gharbazar](https://www.gharbazar.com/) - Selenium  (300 data) Scan for house keyword in title. impure results on search filter.
