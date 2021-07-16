@@ -6,15 +6,21 @@ import time
 
 def aana():
     stored_links = []
-    with open ("csv-files/99aana.csv",'r', newline='',encoding="utf-8") as f:
+    with open ("csv-files/99aana.csv",'r', newline='',encoding="latin1") as f:
         reader = csv.reader(f)
-        for row in reader:
-            stored_links.append(row[-1])
-        if list(reader) == []:
+        if len(list(reader)) == 0:
             headers = ['title','price','location','district','floor','room','bedroom','bathroom','livingroom','kitchen','parking','link']
+            print('I am empty')
+            sys.exit()
             with open('csv-files/99aana.csv', 'w',newline='') as f:
                 writer = csv.writer(f)
                 writer.writerow(headers)
+        else:
+            for row in reader:
+                stored_links.append(row[-1])
+                print('not empty')
+
+        sys.exit()
 
     for count in range(1,290):
         source = requests.get("https://99aana.com/properties/page/" + str(count) + "?_offer_type=sale&keyword_search&_listing&realteo_order=date-desc&_property_type=houses&_price_min&_price_max").text
@@ -37,8 +43,10 @@ def aana():
                 district = location.split()[-1]
 
                 soup = soup.find('div',class_="property-description")
-                soup.find('div',class_="listings-container").decompose()  # Remove the similar properties div
-
+                try:
+                    soup.find('div',class_="listings-container").decompose()  # Remove the similar properties div
+                except:
+                    pass
                 main_features = soup.find('ul',class_='property-main-features')
                 area = main_features.find('li',class_="main-detail-_area").get_text(strip=True)
                 try:

@@ -22,7 +22,8 @@
 * [Pip Python package manager](https://youtu.be/U2ZN104hIcc)
 * [Setting up python virtual env in VSCode](https://youtu.be/Wuuiga0wKdQ)
 * [Data Science Handbook](https://tanthiamhuat.files.wordpress.com/2018/04/pythondatasciencehandbook.pdf)
-* [Mathematics for machine learning *Book*](https://mml-book.github.io/book/mml-book.pdf)
+* [Mathematics for machine learning *Book*](https://mml-book.github.io/book/mml-book.pdf)]
+* [Google Colab](https://www.youtube.com/watch?v=inN8seMm7UI&ab_channel=TensorFlow)
 
 
 
