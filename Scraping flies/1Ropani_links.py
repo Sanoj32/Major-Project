@@ -67,17 +67,17 @@ def ek_ropani():
         for row in reader:
             links.append(row[0])
 
-    # #check if 1Ropani_complete is empty
-    with open ("csv-files/1Ropani_complete.csv",'r', newline='',encoding="utf-8") as f:
+    # #check if 1Ropani is empty
+    with open ("csv-files/1Ropani.csv",'r', newline='',encoding="utf-8") as f:
         reader = csv.reader(f)
         if list(reader) == []:
             write_headers()
     #slicing to remove column name
     links = links[1:]
 
-    # store links in csv 1Ropani_complete.csv in stored_links vaiable
+    # store links in csv 1Ropani.csv in stored_links vaiable
 
-    with open('csv-files/1Ropani_complete.csv', 'r') as f:
+    with open('csv-files/1Ropani.csv', 'r') as f:
         reader = csv.reader(f)
         stored_links = []
         for row in reader: stored_links.append(row[-1])
@@ -128,13 +128,13 @@ def ek_ropani():
             room = None # It does not provide total rooms
             print('----------------------------------------------------------------')
             row = [title,price,location,district,floor,room,bedroom,bathroom,livingroom,kitchen,parking,link]
-            with open ("csv-files/1Ropani_complete.csv",'a', newline='',encoding="utf-8") as f:
+            with open ("csv-files/1Ropani.csv",'a', newline='',encoding="utf-8") as f:
                 writer = csv.writer(f)
                 writer.writerow(row)
 
 def write_headers():
     headers = ['title','price','location','district','floor','room','bedroom','bathroom','livingroom','kitchen','parking','link']
-    with open('csv-files/1Ropani_complete.csv', 'w',newline='') as f:
+    with open('csv-files/1Ropani.csv', 'w',newline='') as f:
         writer = csv.writer(f)
         writer.writerow(headers)
 

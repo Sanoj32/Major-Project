@@ -3,24 +3,17 @@ import requests
 import csv
 import sys
 import time
+import pandas as pd
+import os
 
 def aana():
     stored_links = []
-    with open ("csv-files/99aana.csv",'r', newline='',encoding="latin1") as f:
-        reader = csv.reader(f)
-        if len(list(reader)) == 0:
+    # write headers in a csv file if its empty
+    if os.stat('csv-files/99aana.csv').st_size == 0:
+        with open ("csv-files/99aana.csv",'w', newline='',encoding="latin1") as f:
+            writer = csv.writer(f)
             headers = ['title','price','location','district','floor','room','bedroom','bathroom','livingroom','kitchen','parking','link']
-            print('I am empty')
-            sys.exit()
-            with open('csv-files/99aana.csv', 'w',newline='') as f:
-                writer = csv.writer(f)
-                writer.writerow(headers)
-        else:
-            for row in reader:
-                stored_links.append(row[-1])
-                print('not empty')
-
-        sys.exit()
+            writer.writerow(headers)
 
     for count in range(1,290):
         source = requests.get("https://99aana.com/properties/page/" + str(count) + "?_offer_type=sale&keyword_search&_listing&realteo_order=date-desc&_property_type=houses&_price_min&_price_max").text
@@ -123,5 +116,34 @@ def aana():
     print('-----------------------------------------------------------------------------')
     print('99aana.csv generated')
     print('-----------------------------------------------------------------------------')
+
+def get_links():
+    # This function is used to get the links to the individual pages where the housing details are stored.
+    # The links are stored in a csv file.
+    for count in range(1,297):
+        source = requests.get("https://99aana.com/properties/page/" + str(count) + "?_offer_type=sale&keyword_search&_listing&realteo_order=date-desc&_property_type=houses&_price_min&_price_max").text
+        soup = BeautifulSoup(source,'lxml')
+        links = [] # these contain the links to the pages where the housing details are stored
+        listing_title = soup.findAll('div',class_="listing-title")
+        for title in listing_title:
+            link = title.find('a')['href']
+            links.append(link)
+            print(str(count) + ": " + link)
+        with open('csv-files/99aana_links.csv','a',newline='') as f:
+            writer = csv.writer(f)
+            for l in links:
+                writer.writerow([l])
+        if count == 296:
+            break
+
+# function to check if there are any duplicate links in the csv links file for 99aana
+def check_duplicate():
+    with open('csv-files/99aana_links.csv') as f:
+        stored_links = []
+        reader = csv.reader(f)
+        for row in reader:
+            stored_links.append(row[0])
+        if len(stored_links) == len(set(stored_links)):
+            print("No duplicates here")
 
 aana()
