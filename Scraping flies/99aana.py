@@ -6,6 +6,7 @@ import time
 import pandas as pd
 import os
 
+# function to get data using links from the links csv file
 def aana():
     stored_links = []
     # write headers in a csv file if its empty
@@ -117,9 +118,10 @@ def aana():
     print('99aana.csv generated')
     print('-----------------------------------------------------------------------------')
 
+# This function is used to get the links to the individual pages where the housing details are stored.
+# The links are stored in a csv file.
 def get_links():
-    # This function is used to get the links to the individual pages where the housing details are stored.
-    # The links are stored in a csv file.
+
     for count in range(1,297):
         source = requests.get("https://99aana.com/properties/page/" + str(count) + "?_offer_type=sale&keyword_search&_listing&realteo_order=date-desc&_property_type=houses&_price_min&_price_max").text
         soup = BeautifulSoup(source,'lxml')
@@ -145,5 +147,5 @@ def check_duplicate():
             stored_links.append(row[0])
         if len(stored_links) == len(set(stored_links)):
             print("No duplicates here")
-
-aana()
+check_duplicate()
+print("Running and debugging")
