@@ -11,19 +11,20 @@
 6) Documentation (Pending)
 
 ## INFROMATION AND RESOURCES
-
+### Coumpulsory resourses is marked with C
 ### Tutorial videos
-* [Coursera linear regression ](https://www.coursera.org/lecture/ml-regression/using-the-fitted-line-RjYbf) Good for conceptual learning. Uses outdated libraries from 2015
-* [Gradient descent](https://youtu.be/sDv4f4s2SB8) Very important
-* [Real estate prediction](https://www.youtube.com/watch?v=rdfbcdP75KI&list=PLeo1K3hjS3uu7clOTtwsp94PcHbzqpAdg)
-* [First Class functions](https://www.youtube.com/watch?v=kr0mpwqttM0&t=334s)
+* [Coursera linear regression ](https://www.coursera.org/lecture/ml-regression/using-the-fitted-line-RjYbf) Only good for conceptual/theoritcal learning. Uses outdated libraries.
+* [Vectorizaiton](https://youtu.be/BR3Qx9AVHZE) - Important.
+* [Gradient descent](https://youtu.be/sDv4f4s2SB8) - Very important theoritcal concept.
+* [Real estate prediction](https://www.youtube.com/watch?v=rdfbcdP75KI&list=PLeo1K3hjS3uu7clOTtwsp94PcHbzqpAdg) - For brief overview of how the project will work.
+* [First Class functions](https://www.youtube.com/watch?v=kr0mpwqttM0&t=334s) - How python's functions can be treated as objects.
 * [For Numpy, Pandas and Matplotlib](https://www.codingninjas.com/courses/online-data-science-course)
 * [Google's machine learning course](https://developers.google.com/machine-learning/crash-course/ml-intro)
 * [Pip Python package manager](https://youtu.be/U2ZN104hIcc)
 * [Setting up python virtual env in VSCode](https://youtu.be/Wuuiga0wKdQ)
 * [Data Science Handbook](https://tanthiamhuat.files.wordpress.com/2018/04/pythondatasciencehandbook.pdf)
 * [Mathematics for machine learning *Book*](https://mml-book.github.io/book/mml-book.pdf)]
-* [Google Colab](https://www.youtube.com/watch?v=inN8seMm7UI&ab_channel=TensorFlow)
+* [Google Colab](https://www.youtube.com/watch?v=inN8seMm7UI&ab_channel=TensorFlow) - Online GPU for extra power.
 
 
 
@@ -41,7 +42,7 @@
 * How pip works
 
 ### Important Mathematics and Statistics Concepts (Add more)
-* Co-relation between variables
+* Co-relation between variables and multicolinearity.
 * [Linear/Multiple](https://youtu.be/yIYKR4sgzI8)/Logistic reression
 * [Squared error of regression line](https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/more-on-regression/v/squared-error-of-regression-line)
 * p-value, level of significance, null and alternate hypothesis.
@@ -55,20 +56,22 @@
 *  Dummy variable trap
 ### Algorithms (listed possible best to worst)
 1. Linear regression - Related = Wald's test
-2. Convolution neural networks
-3. Random forest
-4. ID3
+2. Logistic regression ??
+3. Convolution neural networks
+4. Random forest
+5. ID3
 
 Use waka as a testing tool and may use external librariess to check efficiency of the model.
 
 ### Miscellaneous
 * [Basobass data](https://www.kaggle.com/sagyamthapa/nepali-housing-price-dataset?select=2020-4-27.csv)
 * Using VSCode commmand pallete
-* [The Spyder IDE](https://www.spyder-ide.org/)
-* [Markdown](https://guides.github.com/features/mastering-markdown/)
-* [Land measurement](https://en.wikipedia.org/wiki/Nepalese_customary_units_of_measurement)
+* [The Spyder IDE](https://www.spyder-ide.org/) - Optional for now
+* [Markdown](https://guides.github.com/features/mastering-markdown/) - Very important for editing and adding resourses.
+* [Land measurement](https://en.wikipedia.org/wiki/Nepalese_customary_units_of_measurement) - Details about the different units of measurement of land.
 * [Creating checkmarks in projects](https://docs.github.com/en/issues/king-your-work-with-issues/creating-issues/about-task-lists)
-* [How Much Training Data is Required for Machine Learning? (Article)](https://machinelearningmastery.com/much-training-data-required-machine-learning/)
+* [How Much Training Data is Required for Machine Learning? (Article)](https://machinelearningmastery.com/much-training-data-required-machine-**learning**/)
+* [Install jupyter lab using conda for notebook dark theme:](https://jupyter.org/install.html)
 
 ### Libraries (Must read official docs)
 Go through the basic contents of the docs atleast once

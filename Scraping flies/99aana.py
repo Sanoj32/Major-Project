@@ -1,3 +1,4 @@
+from typing import final
 from bs4 import BeautifulSoup
 import requests
 import csv
@@ -147,5 +148,3 @@ def check_duplicate():
             stored_links.append(row[0])
         if len(stored_links) == len(set(stored_links)):
             print("No duplicates here")
-check_duplicate()
-print("Running and debugging")
