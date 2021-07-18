@@ -15,7 +15,7 @@ import requests
 chrome_options = Options()
 
 chrome_options.add_argument("--headless")
-driver = webdriver.Chrome(options=chrome_options)
+browser = webdriver.Chrome(options=chrome_options)
 def get_links():
 
 
@@ -25,8 +25,8 @@ def get_links():
     for count in range(44, 135):
         links = []
         url = "https://www.nepalhomes.com/list/&sort=1&page=" + str(count) + "&is_project=&agency_id=&find_district_id=&find_area_id=&find_property_category=5d660cb27682d03f547a6c4a&find_property_type=5d70b3df4139ae34c8fbab94&find_property_purpose=5db2bdb42485621618ecdae6"
-        driver.get(url) #open the url
-        table = driver.find_element_by_class_name('table-list')
+        browser.get(url) #open the url
+        table = browser.find_element_by_class_name('table-list')
         a_tags = table.find_elements_by_tag_name('a') #get all a tags in table
         for a_tag in a_tags:
             link = a_tag.get_attribute('href')

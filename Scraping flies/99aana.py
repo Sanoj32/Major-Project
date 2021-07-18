@@ -10,9 +10,16 @@ import os
 # function to get data using links from the links csv file
 def aana():
     stored_links = []
+    # get the stored links from the 99aana_links.csv file
+    with open('csv_files/raw/99aana_links.csv') as f:
+        reader = csv.reader(f)
+        for row in reader:
+            link = row[0]
+            stored_links.append(link)
+
     # write headers in a csv file if its empty
-    if os.stat('csv-files/99aana.csv').st_size == 0:
-        with open ("csv-files/99aana.csv",'w', newline='',encoding="latin1") as f:
+    if os.stat('csv-files/raw/99aana.csv').st_size == 0:
+        with open ("csv-files/raw/99aana.csv",'w', newline='',encoding="latin1") as f:
             writer = csv.writer(f)
             headers = ['title','price','location','district','floor','room','bedroom','bathroom','livingroom','kitchen','parking','link']
             writer.writerow(headers)
@@ -108,7 +115,7 @@ def aana():
                 row = [title,price,location,district,floor,room,bedroom,bathroom,livingroom,kitchen,parking,link]
 
                 print(row)
-                with open ("csv-files/99aana.csv",'a', newline='') as f:
+                with open ("csv-files/raw/99aana.csv",'a', newline='') as f:
                     writer = csv.writer(f)
                     writer.writerow(row)
 
@@ -132,7 +139,7 @@ def get_links():
             link = title.find('a')['href']
             links.append(link)
             print(str(count) + ": " + link)
-        with open('csv-files/99aana_links.csv','a',newline='') as f:
+        with open('csv-files/raw/99aana_links.csv','a',newline='') as f:
             writer = csv.writer(f)
             for l in links:
                 writer.writerow([l])
@@ -141,7 +148,7 @@ def get_links():
 
 # function to check if there are any duplicate links in the csv links file for 99aana
 def check_duplicate():
-    with open('csv-files/99aana_links.csv') as f:
+    with open('csv-files/raw/99aana_links.csv') as f:
         stored_links = []
         reader = csv.reader(f)
         for row in reader:

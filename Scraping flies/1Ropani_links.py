@@ -11,10 +11,10 @@ def get_links():
     count = 1
     header = ['links']
     links = []
-    driver = webdriver.Chrome('C:\Program Files (x86)\Chromedriver\chromedriver.exe')
+    browser = webdriver.Chrome('C:\Program Files (x86)\Chromedriver\chromedriver.exe')
     URL = "http://www.1ropani.com/House.aspx"
-    driver.get(URL)
-    select = driver.find_element_by_id('ContentPlaceHolder1_HouseListControl1_ItemsPerPageDropDownList')
+    browser.get(URL)
+    select = browser.find_element_by_id('ContentPlaceHolder1_HouseListControl1_ItemsPerPageDropDownList')
     all_options = select.find_elements_by_tag_name("option")
     #set the results to 100 results per page
     for option in all_options:
@@ -27,7 +27,7 @@ def get_links():
 
     # looping throuh 7 pages after setting 100 results per page.
     for i in range(1,8):
-        pagination = driver.find_element_by_class_name('search_result_pagi')
+        pagination = browser.find_element_by_class_name('search_result_pagi')
         indexes = pagination.find_elements_by_tag_name('a')
         for index in indexes:
             if index.text == str(i):
@@ -35,7 +35,7 @@ def get_links():
                 time.sleep(20)
                 break
 
-        table = driver.find_element_by_id('ContentPlaceHolder1_HouseListControl1_GridView1')
+        table = browser.find_element_by_id('ContentPlaceHolder1_HouseListControl1_GridView1')
         table_rows = table.find_elements_by_tag_name('tr')
         for row in table_rows[2:-2]:
             link = []

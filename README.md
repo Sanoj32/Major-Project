@@ -4,7 +4,7 @@
 ## Roadmap
 0) Project proposal (In development)
 1) Scrape data from all sites mentioned [below](#websites-to-scrape). (In development)
-2) Clean the data and remove unnecessary variables and noise. (Pending)
+2) Clean the data and remove unnecessary variables and noise. (In development)
 3) Perfrom EDA and find out the relationships between variables. (Pending)
 4) Build a model to predict/give an objective price of the house based on the parameters. (Pending)
 5) Deploy the model using flask(Api), HTML, CSS, JS and PHP/Laravel(Backend). (Pending)
@@ -64,7 +64,6 @@
 Use waka as a testing tool and may use external librariess to check efficiency of the model.
 
 ### Miscellaneous
-* [Basobass data](https://www.kaggle.com/sagyamthapa/nepali-housing-price-dataset?select=2020-4-27.csv)
 * Using VSCode commmand pallete
 * [The Spyder IDE](https://www.spyder-ide.org/) - Optional for now
 * [Markdown](https://guides.github.com/features/mastering-markdown/) - Very important for editing and adding resourses.
