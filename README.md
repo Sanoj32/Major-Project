@@ -83,7 +83,7 @@ Go through the basic contents of the docs atleast once
 Always try to check if the data is in kaggle before writing a script yourself.
 
 1.  [99aana](https://99aana.com/) - ✅
-2.  [Nepal Homes](https://www.nepalhomes.com/list/&sort=1&page=1&agency_id=&is_project=&find_district_id=&find_area_id=&find_property_category=5d660cb27682d03f547a6c4a&find_property_type=5d70b3df4139ae34c8fbab94) - Might need Selenium Roughly 1k data.
+2.  [Nepal Homes](https://www.nepalhomes.com/list/&sort=1&page=1&agency_id=&is_project=&find_district_id=&find_area_id=&find_property_category=5d660cb27682d03f547a6c4a&find_property_type=5d70b3df4139ae34c8fbab94) - Links done.
 3.  [Hamrobazar](https://hamrobazar.com) - presents a captcha to check for bots. 3k properties.
 4.  [Gharbazar](https://www.gharbazar.com/) - Selenium  (300 data) Scan for house keyword in title. impure results on search filter.
 5.  [Basobaas](https://basobaas.com/) - ✅

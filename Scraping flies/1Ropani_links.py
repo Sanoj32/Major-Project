@@ -6,7 +6,7 @@ import time
 import sys
 import os
 
-# function to get links from the 1Ropani website
+# function to get links from the 1ropani website
 def get_links():
     count = 1
     header = ['links']
@@ -50,7 +50,7 @@ def get_links():
 
 
     #save links in a csv file named as 1ropani_links.csv
-    with open('csv-files/1ropani_links.csv', 'w',newline='') as f:
+    with open('csv_files/1ropani_links.csv', 'w',newline='') as f:
         writer = csv.writer(f)
         writer.writerow(header)
         writer.writerows(links)
@@ -61,23 +61,23 @@ def ek_ropani():
 
     # get links from 1ropani_links.csv
     links = []
-    with open('csv-files/1ropani_links.csv', 'r') as f:
+    with open('../csv_files/links/1ropani_links.csv', 'r') as f:
         reader = csv.reader(f)
         # start from 2nd item
         for row in reader:
             links.append(row[0])
 
-    # #check if 1Ropani is empty
-    with open ("csv-files/1Ropani.csv",'r', newline='',encoding="utf-8") as f:
+    # #check if 1ropani is empty
+    with open ("../csv_files/raw/1ropani.csv",'r', newline='',encoding="utf-8") as f:
         reader = csv.reader(f)
         if list(reader) == []:
             write_headers()
     #slicing to remove column name
     links = links[1:]
 
-    # store links in csv 1Ropani.csv in stored_links vaiable
+    # store links in csv 1ropani.csv in stored_links vaiable
 
-    with open('csv-files/1Ropani.csv', 'r') as f:
+    with open('../csv_files/raw/1ropani.csv', 'r') as f:
         reader = csv.reader(f)
         stored_links = []
         for row in reader: stored_links.append(row[-1])
@@ -88,6 +88,8 @@ def ek_ropani():
             soup = BeautifulSoup(source, 'lxml')
             soup = soup.find('div',{'id':'property_detail'})
             title = soup.find('h2').get_text(strip=True)
+            if 'commercial' in title.lower():
+                continue
             print(links.index(link))
             print("Title: ", title)
             price = soup.find('span',{'class':'price'}).get_text(strip=True).split('|')[0]
@@ -101,6 +103,11 @@ def ek_ropani():
             district = location.split(',')[0]
             print("district: ",district)
             area = soup.find('td',attrs = {'style' : 'width: 200px; padding-left: 5px; padding-right: 15px;'}).get_text(strip=True).split('Price:')[0].split('Area:')[1].strip()
+            if(area == ''):
+                print('!!!!!!!!!!!!!!!!!!!!!')
+                print('Empty area',link)
+                print('!!!!!!!!!!!!!!!!!!!!!')
+                continue
             print('area: ',area)
             #feature_list = ul with floor, bedroom, bath, kitchen, living room
             feature_list = soup.find('ul',{'class':'feature_list'})
@@ -119,6 +126,7 @@ def ek_ropani():
             print("bedroom: ",bedroom)
             print("livingroom: ",livingroom)
             print("bathroom: ",bathroom)
+            print("link",link)
 
             if 'parking' in soup.text.lower():
                 parking = 1
@@ -127,21 +135,17 @@ def ek_ropani():
             print(parking)
             room = None # It does not provide total rooms
             print('----------------------------------------------------------------')
-            row = [title,price,location,district,floor,room,bedroom,bathroom,livingroom,kitchen,parking,link]
-            with open ("csv-files/1Ropani.csv",'a', newline='',encoding="utf-8") as f:
+            row = [title,price,area,location,district,floor,room,bedroom,bathroom,livingroom,kitchen,parking,link]
+            with open ("../csv_files/raw/1ropani.csv",'a', newline='',encoding="utf-8") as f:
                 writer = csv.writer(f)
                 writer.writerow(row)
 
 def write_headers():
-    headers = ['title','price','location','district','floor','room','bedroom','bathroom','livingroom','kitchen','parking','link']
-    with open('csv-files/1Ropani.csv', 'w',newline='') as f:
-        writer = csv.writer(f)
-        writer.writerow(headers)
+        headers = ['title','price','area','location','district','floor','room','bedroom','bathroom','livingroom','kitchen','parking','link']
+        with open('../csv_files/raw/1ropani.csv', 'w',newline='') as f:
+            writer = csv.writer(f)
+            writer.writerow(headers)
 
-
+write_headers()
 ek_ropani()
-
-# Notes
-# This website has no total rooms and gives details about parking cars or bikes etc.
-
 

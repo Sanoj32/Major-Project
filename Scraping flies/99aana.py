@@ -21,7 +21,7 @@ def aana():
     if os.stat('csv-files/raw/99aana.csv').st_size == 0:
         with open ("csv-files/raw/99aana.csv",'w', newline='',encoding="latin1") as f:
             writer = csv.writer(f)
-            headers = ['title','price','location','district','floor','room','bedroom','bathroom','livingroom','kitchen','parking','link']
+            headers = ['title','price','area','location','district','floor','room','bedroom','bathroom','livingroom','kitchen','parking','link']
             writer.writerow(headers)
 
     for count in range(1,290):
@@ -112,7 +112,7 @@ def aana():
                         parking = 1
 
 
-                row = [title,price,location,district,floor,room,bedroom,bathroom,livingroom,kitchen,parking,link]
+                row = [title,price,area,location,district,floor,room,bedroom,bathroom,livingroom,kitchen,parking,link]
 
                 print(row)
                 with open ("csv-files/raw/99aana.csv",'a', newline='') as f:

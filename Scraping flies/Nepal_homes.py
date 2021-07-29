@@ -10,7 +10,6 @@ from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
 import requests
 
-
 # implement headless mode
 chrome_options = Options()
 
@@ -54,3 +53,5 @@ def get_details():
         soup = soup.find('div',{'id':'app'}) # removing all styles and scripts
         title = soup.find('h1').get_text(strip=True)
         price = soup.find('p',{'class':['text-3xl','font-bold','leading-none','text-black']}).get_text(strip=True).split('.')[1]
+
+
