@@ -11,11 +11,22 @@
 6) Documentation (Pending)
 
 ## INFROMATION AND RESOURCES
-### Coumpulsory resourses is marked with C
+
+### Breaking changes
+* Some file names refactored to camel case resulting in possible crash of some working scripts eg. csv-files -> csv_files
+
+### Folder heirarchy
+    - major-project
+      - csv_files
+        - raw (Raw unclean data after scraping)
+        - links (Links to be scrapped)
+        - clean (Cleaned data)
+    - jupyter_notebooks (Notebooks to clean data and develop the model)
+    - scraping_files
 ### Tutorial videos
 * [Coursera linear regression ](https://www.coursera.org/lecture/ml-regression/using-the-fitted-line-RjYbf) Only good for conceptual/theoritcal learning. Uses outdated libraries.
-* [Vectorizaiton](https://youtu.be/BR3Qx9AVHZE) - Important.
-* [Gradient descent](https://youtu.be/sDv4f4s2SB8) - Very important theoritcal concept.
+* [Vectorizaiton](https://youtu.be/BR3Qx9AVHZE) - Important for understanding numpy and pandas.
+* [Gradient descent](https://youtu.be/sDv4f4s2SB8) - Important for understanding linear regression.
 * [Real estate prediction](https://www.youtube.com/watch?v=rdfbcdP75KI&list=PLeo1K3hjS3uu7clOTtwsp94PcHbzqpAdg) - For brief overview of how the project will work.
 * [First Class functions](https://www.youtube.com/watch?v=kr0mpwqttM0&t=334s) - How python's functions can be treated as objects.
 * [For Numpy, Pandas and Matplotlib](https://www.codingninjas.com/courses/online-data-science-course)
@@ -83,18 +94,18 @@ Go through the basic contents of the docs atleast once
 Always try to check if the data is in kaggle before writing a script yourself.
 
 1.  [99aana](https://99aana.com/) - ✅
-2.  [Nepal Homes](https://www.nepalhomes.com/list/&sort=1&page=1&agency_id=&is_project=&find_district_id=&find_area_id=&find_property_category=5d660cb27682d03f547a6c4a&find_property_type=5d70b3df4139ae34c8fbab94) - Links done.
-3.  [Hamrobazar](https://hamrobazar.com) - presents a captcha to check for bots. 3k properties.
-4.  [Gharbazar](https://www.gharbazar.com/) - Selenium  (300 data) Scan for house keyword in title. impure results on search filter.
-5.  [Basobaas](https://basobaas.com/) - ✅
-6.  [1Ropani](http://www.1ropani.com/) - BS4 (607 houses) ✅
-7.  [Gharghaderi](https://www.gharghaderi.com/) - Selenium
-8.  [Housing Nepal](https://housingnepal.com) - BS4
-9.  [Real Estate In Nepal](https://www.realestateinnepal.com/) - BS4
+2.  [Nepal Homes](https://www.nepalhomes.com/list/&sort=1&page=1&agency_id=&is_project=&find_district_id=&find_area_id=&find_property_category=5d660cb27682d03f547a6c4a&find_property_type=5d70b3df4139ae34c8fbab94) - 1k Links done (server problems at the point of tbis edit)
+3.  [Basobaas](https://basobaas.com/) - 2k Links done data remaining
+4.  [1Ropani](http://www.1ropani.com/) - BS4 (607 houses) ✅
+5.  [Hamrobazar](https://hamrobazar.com) - presents a captcha to check for bots. 3k properties.
+6.  [Gharbazar](https://www.gharbazar.com/) - Selenium  (300 data) Scan for house keyword in title. impure results on search filter.
+7.  [Gharghaderi](https://www.gharghaderi.com/) - Selenium (Bad filter resulting in limited data) roughly 300 data.
+8.  [Housing Nepal](https://housingnepal.com) - BS4 low data
+9.  [Real Estate In Nepal](https://www.realestateinnepal.com/) - BS4 low data
 10. [Nepal Home Search](https://nepalhomesearch.com/) -BS4 (140 properties may not be worth it)
 11. [Nepal Realestates](https://nepalrealestates.com/) -BS4 very low amount of data
-12. [The Realtors](https://therealtors.com.np/property/view-all-buy) - search with selenium and scrapte with BS4. Scan title for house keyword. Not properly catagorized
-13. [GharJagga Nepal](https://www.gharjagganepal.com/) - Infinite scrolling (selenium)
+12. [The Realtors](https://therealtors.com.np/property/view-all-buy) - 300 data. search with selenium and scrapte with BS4. Scan title for house keyword. Not properly catagorized
+13. [GharJagga Nepal](https://www.gharjagganepal.com/) -  330 data Infinite scrolling (selenium)
 
 ## Parameters (*subject to change*)
 1. Price

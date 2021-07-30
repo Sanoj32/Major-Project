@@ -81,9 +81,9 @@ def ek_ropani():
         reader = csv.reader(f)
         stored_links = []
         for row in reader: stored_links.append(row[-1])
-
     for link in links:
         if link not in stored_links:
+            print(links.index(link))
             source = requests.get(link).text
             soup = BeautifulSoup(source, 'lxml')
             soup = soup.find('div',{'id':'property_detail'})
@@ -91,24 +91,19 @@ def ek_ropani():
             if 'commercial' in title.lower():
                 continue
             print(links.index(link))
-            print("Title: ", title)
             price = soup.find('span',{'class':'price'}).get_text(strip=True).split('|')[0]
             if "on call" in price:
                 continue
             else:
                 price = price.split('Rs.')[1].strip()
-            print("Price: ",price)
             location = soup.find('td',attrs = {'style' : 'width: 200px; padding-left: 5px; padding-right: 15px;'}).get_text(strip=True).split('Land Description:')[0].split(':')[1]
-            print('location: ',location)
             district = location.split(',')[0]
-            print("district: ",district)
             area = soup.find('td',attrs = {'style' : 'width: 200px; padding-left: 5px; padding-right: 15px;'}).get_text(strip=True).split('Price:')[0].split('Area:')[1].strip()
-            if(area == ''):
+            if(area == ''): #skip the house without area
                 print('!!!!!!!!!!!!!!!!!!!!!')
                 print('Empty area',link)
                 print('!!!!!!!!!!!!!!!!!!!!!')
                 continue
-            print('area: ',area)
             #feature_list = ul with floor, bedroom, bath, kitchen, living room
             feature_list = soup.find('ul',{'class':'feature_list'})
             for li in feature_list.find_all('li'):
@@ -122,6 +117,11 @@ def ek_ropani():
                     livingroom = li.get_text(strip=True)
                 if 'kitchen' in li.get_text().lower():
                     kitchen = li.get_text(strip=True)
+            print("Price: ",price)
+            print('area: ',area)
+            print("district: ",district)
+            print('location: ',location)
+            print("Title: ", title)
             print("floor: ",floor)
             print("bedroom: ",bedroom)
             print("livingroom: ",livingroom)
