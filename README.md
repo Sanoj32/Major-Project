@@ -91,21 +91,25 @@ Go through the basic contents of the docs atleast once
 * [Matplotlib](https://matplotlib.org/stable/contents.html)
 
 ## Websites to scrape
-Always try to check if the data is in kaggle before writing a script yourself.
+| S.N.  | Name  | Data Amount  | Library used  | Status  | Remarks  |
+|:-:|:-:|:-:|:-:|:-:|:---|
+| 1  | [99aana](https://99aana.com/)  | 3K  | BS4  | Completed  |   |
+| 2  | [Nepal Homes](https://www.nepalhomes.com/)  |  1K | Selenium & BS4  | Links fetched  | Data to be fetched using BS4  |
+| 3  | [Basobaas](https://basobaas.com/)  | 2K  | Selenium & BS4  | Links fetched  | Data to be fetched using BS4  |
+| 4  | [1Ropani](http://www.1ropani.com/)  | 600  | Selenium & BS4  | Completed  |   |
+| 5  | [Hamrobazar](https://hamrobazar.com)  | 3K  |   | Halted  | Presents a captcha to check for bots  |
+| 6  | [Gharbazar](https://www.gharbazar.com/)  | 340  | Selenium | Links fetched  | Low amount of data. Scan for house keyword in title.  |
+| 7  | [Gharghaderi](https://www.gharghaderi.com/)  | 300  | Selenium  | Halted  | Low amount of data  |
+| 8  | [Housing Nepal](https://housingnepal.com)  | less than 300  |  BS4 | Halted  | Low amount of data  |
+| 9  |   [Real Estate In Nepal](https://www.realestateinnepal.com/)  | less than 300  | BS4  | Halted  | Low amount of data  |
+| 10  | [Nepal Home Search](https://nepalhomesearch.com/)  |  140  | BS4  | Halted  | Low amount of data  |
+| 11  |  [Nepal Realestates](https://nepalrealestates.com/) | less than 300  | BS4  | Halted | Low amoun of data  |
+| 12  | [The Realtors](https://therealtors.com.np/property/view-all-buy)  | 300  | Selenium & BS4  | Halted  | Low amount of data. Scan title or house keyword  |
+| 13  | [GharJagga Nepal](https://www.gharjagganepal.com/)  |  330 | Selenium  | Halted  | Low data and has infinite scrolling  |
 
-1.  [99aana](https://99aana.com/) - ✅
-2.  [Nepal Homes](https://www.nepalhomes.com/list/&sort=1&page=1&agency_id=&is_project=&find_district_id=&find_area_id=&find_property_category=5d660cb27682d03f547a6c4a&find_property_type=5d70b3df4139ae34c8fbab94) - 1k Links done (server problems at the point of tbis edit)
-3.  [Basobaas](https://basobaas.com/) - 2k Links done data remaining
-4.  [1Ropani](http://www.1ropani.com/) - BS4 (607 houses) ✅
-5.  [Hamrobazar](https://hamrobazar.com) - presents a captcha to check for bots. 3k properties.
-6.  [Gharbazar](https://www.gharbazar.com/) - Selenium  (300 data) Scan for house keyword in title. impure results on search filter.
-7.  [Gharghaderi](https://www.gharghaderi.com/) - Selenium (Bad filter resulting in limited data) roughly 300 data.
-8.  [Housing Nepal](https://housingnepal.com) - BS4 low data
-9.  [Real Estate In Nepal](https://www.realestateinnepal.com/) - BS4 low data
-10. [Nepal Home Search](https://nepalhomesearch.com/) -BS4 (140 properties may not be worth it)
-11. [Nepal Realestates](https://nepalrealestates.com/) -BS4 very low amount of data
-12. [The Realtors](https://therealtors.com.np/property/view-all-buy) - 300 data. search with selenium and scrapte with BS4. Scan title for house keyword. Not properly catagorized
-13. [GharJagga Nepal](https://www.gharjagganepal.com/) -  330 data Infinite scrolling (selenium)
+
+
+
 
 ## Parameters (*subject to change*)
 1. Price
