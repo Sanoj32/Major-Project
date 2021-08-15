@@ -13,7 +13,7 @@
 ## INFROMATION AND RESOURCES
 
 ### Breaking changes
-* Some file names refactored to camel case resulting in possible crash of some working scripts eg. csv-files -> csv_files
+* Some file names refactored to snake case resulting in possible crash of some working scripts eg. csv-files -> csv_files
 
 ### Folder heirarchy
     - major-project
