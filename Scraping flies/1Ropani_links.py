@@ -81,7 +81,7 @@ def ek_ropani():
         reader = csv.reader(f)
         stored_links = []
         for row in reader: stored_links.append(row[-1])
-    for link in links:
+    for link in links[0:30]:
         if link not in stored_links:
             print(links.index(link))
             source = requests.get(link).text
@@ -96,7 +96,7 @@ def ek_ropani():
                 continue
             else:
                 price = price.split('Rs.')[1].strip()
-            location = soup.find('td',attrs = {'style' : 'width: 200px; padding-left: 5px; padding-right: 15px;'}).get_text(strip=True).split('Land Description:')[0].split(':')[1]
+            location = soup.find('td',  attrs = {'style' : 'width: 200px; padding-left: 5px; padding-right: 15px;'}).get_text(strip=True).split('Land Description:')[0].split(':')[1]
             district = location.split(',')[0]
             area = soup.find('td',attrs = {'style' : 'width: 200px; padding-left: 5px; padding-right: 15px;'}).get_text(strip=True).split('Price:')[0].split('Area:')[1].strip()
             if(area == ''): #skip the house without area
@@ -146,6 +146,12 @@ def write_headers():
             writer = csv.writer(f)
             writer.writerow(headers)
 
-write_headers()
-ek_ropani()
-
+links = []
+with open('../csv_files/links/1ropani_links.csv', 'r') as f:
+    reader = csv.reader(f)
+    # start from 2nd item
+    for row in reader:
+        links.append(row[0])
+for link in links:
+    source = requests.get('http://www.1ropani.com/HouseDetail.aspx?ID=7019').text
+    soup = BeautifulSoup(source, 'lxml')

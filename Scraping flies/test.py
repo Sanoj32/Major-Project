@@ -1,1 +1,3 @@
-print(True + 1)
+x = "Hello world"
+x.replace('hae','hi')
+print(x)

@@ -23,7 +23,8 @@
         - clean (Cleaned data)
     - jupyter_notebooks (Notebooks to clean data and develop the model)
     - scraping_files
-### Tutorial videos
+### Tutorial resources
+* [Hosing price prediction from towards data science](https://towardsdatascience.com/predict-house-prices-with-machine-learning-5b475db4e1e)
 * [Coursera linear regression ](https://www.coursera.org/lecture/ml-regression/using-the-fitted-line-RjYbf) Only good for conceptual/theoritcal learning. Uses outdated libraries.
 * [Vectorizaiton](https://youtu.be/BR3Qx9AVHZE) - Important for understanding numpy and pandas.
 * [Gradient descent](https://youtu.be/sDv4f4s2SB8) - Important for understanding linear regression.
@@ -53,7 +54,7 @@
 * How pip works
 
 ### Important Mathematics and Statistics Concepts (Add more)
-* Co-relation between variables and multicolinearity.
+* Co-relation between variables and multicollinearity.
 * [Linear/Multiple](https://youtu.be/yIYKR4sgzI8)/Logistic reression
 * [Squared error of regression line](https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/more-on-regression/v/squared-error-of-regression-line)
 * p-value, level of significance, null and alternate hypothesis.
@@ -61,16 +62,25 @@
 * Fit a line using least square method.
 * Vectors, Partial derivative, gradient of a function and gradient descent.
 
+### Important diagrams
+* Scatter plot
+* Heatmap - To find multicollinearity
+* Box plot
+* Histograms
+* Violin plot
+
 
 ### Important Machine learning Comncepts
 *  One hot encoding
 *  Dummy variable trap
+
 ### Algorithms (listed possible best to worst)
-1. Linear regression - Related = Wald's test
-2. Logistic regression ??
-3. Convolution neural networks
-4. Random forest
-5. ID3
+1. Ridge regression - Because the data seems to have multicollinearity
+2. Linear regression - Related = Wald's test
+3. Logistic regression ??
+4. Convolution neural networks
+5. Random forest
+6. ID3
 
 Use waka as a testing tool and may use external librariess to check efficiency of the model.
 
@@ -91,7 +101,7 @@ Go through the basic contents of the docs atleast once
 * [Matplotlib](https://matplotlib.org/stable/contents.html)
 
 ## Websites to scrape
-| S.N.  | Name  | Data Amount  | Library used  | Status  | Remarks  |
+| S.N.  | Name  | Data Amount  | Library required  | Status  | Remarks  |
 |:-:|:-:|:-:|:-:|:-:|:---|
 | 1  | [99aana](https://99aana.com/)  | 3K  | BS4  | Completed  |   |
 | 2  | [Nepal Homes](https://www.nepalhomes.com/)  |  1K | Selenium & BS4  | Links fetched  | Data to be fetched using BS4  |
@@ -101,9 +111,9 @@ Go through the basic contents of the docs atleast once
 | 6  | [Gharbazar](https://www.gharbazar.com/)  | 340  | Selenium | Links fetched  | Low amount of data. Scan for house keyword in title.  |
 | 7  | [Gharghaderi](https://www.gharghaderi.com/)  | 300  | Selenium  | Halted  | Low amount of data  |
 | 8  | [Housing Nepal](https://housingnepal.com)  | less than 300  |  BS4 | Halted  | Low amount of data  |
-| 9  |   [Real Estate In Nepal](https://www.realestateinnepal.com/)  | less than 300  | BS4  | Halted  | Low amount of data  |
+| 9  |   [Real Estate In Nepal](https://www.realestateinnepal.com/)  | less than 300  | BS4  | Halted  | Low amount of data. Restriction for bots  |
 | 10  | [Nepal Home Search](https://nepalhomesearch.com/)  |  140  | BS4  | Halted  | Low amount of data  |
-| 11  |  [Nepal Realestates](https://nepalrealestates.com/) | less than 300  | BS4  | Halted | Low amoun of data  |
+| 11  |  [Nepal Realestates](https://nepalrealestates.com/) | less than 300  | BS4  | Halted | Low amoun of data. |
 | 12  | [The Realtors](https://therealtors.com.np/property/view-all-buy)  | 300  | Selenium & BS4  | Halted  | Low amount of data. Scan title or house keyword  |
 | 13  | [GharJagga Nepal](https://www.gharjagganepal.com/)  |  330 | Selenium  | Halted  | Low data and has infinite scrolling  |
 
@@ -127,6 +137,7 @@ Go through the basic contents of the docs atleast once
 13. Living room *
 14. Garage
 15. Furnished ? *
+16. Guestroom *
 
 ### [Naming convention](https://softwareengineering.stackexchange.com/questions/308972/python-file-naming-convention)
 * Files/Modules and variables = snake_case

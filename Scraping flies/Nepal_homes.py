@@ -55,3 +55,4 @@ def get_details():
         price = soup.find('p',{'class':['text-3xl','font-bold','leading-none','text-black']}).get_text(strip=True).split('.')[1]
 
 
+get_links()
