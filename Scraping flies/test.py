@@ -1,3 +1,5 @@
-x = "Hello world"
-x.replace('hae','hi')
-print(x)
+x = '20.2'
+try:
+    print(float(x))
+except:
+    print('Not float')

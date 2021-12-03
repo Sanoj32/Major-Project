@@ -1,5 +1,5 @@
 # Major-Project
-**A central repo for sharing resources, workflows and roadmaps. Learn how to edit a markdown file and add more resourses if found.  Check the [Projects](https://github.com/Sanoj32/Major-Project/projects) section for project managemet plans.**
+**A central repo for code, sharing resources, workflows and roadmaps.Check the [Projects](https://github.com/Sanoj32/Major-Project/projects) section for project managemet plans.**
 
 ## Roadmap
 0) Project proposal (In development)
@@ -10,10 +10,7 @@
 5) Deploy the model using flask(Api), HTML, CSS, JS and PHP/Laravel(Backend). (Pending)
 6) Documentation (Pending)
 
-## INFROMATION AND RESOURCES
-
-### Breaking changes
-* Some file names refactored to snake case resulting in possible crash of some working scripts eg. csv-files -> csv_files
+## INFORMATION AND RESOURCES
 
 ### Folder heirarchy
     - major-project
@@ -35,7 +32,7 @@
 * [Pip Python package manager](https://youtu.be/U2ZN104hIcc)
 * [Setting up python virtual env in VSCode](https://youtu.be/Wuuiga0wKdQ)
 * [Data Science Handbook](https://tanthiamhuat.files.wordpress.com/2018/04/pythondatasciencehandbook.pdf)
-* [Mathematics for machine learning *Book*](https://mml-book.github.io/book/mml-book.pdf)]
+* [Mathematics for machine learning *Book*](https://mml-book.github.io/book/mml-book.pdf)
 * [Google Colab](https://www.youtube.com/watch?v=inN8seMm7UI&ab_channel=TensorFlow) - Online GPU for extra power.
 
 
@@ -73,6 +70,7 @@
 ### Important Machine learning Comncepts
 *  One hot encoding
 *  Dummy variable trap
+*  [Co-relation does not mean causation](https://www.analyticsvidhya.com/blog/2015/06/establish-causality-events/)
 
 ### Algorithms (listed possible best to worst)
 1. Ridge regression - Because the data seems to have multicollinearity
