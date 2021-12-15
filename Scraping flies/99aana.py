@@ -200,3 +200,8 @@ def check_duplicate():
             print("No duplicates here")
 
 aana()
+class Datraframe(){
+    def funtion head(){
+        return x values
+    }
+}
